@@ -7,7 +7,7 @@ bot.on('ready', () =>  {
     console.log("Je suis connecté !")
   });
 
-bot.login('NDgyMzQxNDMwMTI4NDEwNjQ0.DmDfIg.A8NNGbMdG65_9Do5XPVEJlNX7qc')
+bot.login(process.env.TOKEN)
 
 bot.on('message', message => {
     if(message.content.startsWith(prefix + "cc")) {
